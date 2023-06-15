@@ -30,8 +30,25 @@ namespace DecisionesyBucles.Ejercicios
     {
         public static void Realizar(int n)
         {
-            // Tu código debajo de esta línea
-
+            for (int num = 1; num <= n; num++)
+            {
+                if (num % 3 == 0 && num % 5 == 0)
+                {
+                    Console.WriteLine("fizzbuzz");
+                }
+                else if (num % 3 == 0)
+                {
+                    Console.WriteLine("fizz");
+                }
+                else if (num % 5 == 0)
+                {
+                    Console.WriteLine("buzz");
+                }
+                else
+                {
+                    Console.WriteLine(num);
+                }
+            }
         }
     }
 }
