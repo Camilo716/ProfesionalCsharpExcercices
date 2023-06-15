@@ -1,3 +1,5 @@
+using System.Globalization;
+
 namespace DecisionesyBucles.Ejercicios
 {
     /*
@@ -10,19 +12,9 @@ namespace DecisionesyBucles.Ejercicios
     {
         public int DeterminarElNumeroMayor(int a, int b)
         {
-            int resultado;
+            int resultado = a > b ? a : b;
 
-            // Tu código debajo de esta línea
-            if (a > b)
-            {
-                resultado = a;
-            }
-            else
-            {
-                resultado = b;
-            }
-
-            return resultado;
+            return  resultado;
         }
     }
 }
