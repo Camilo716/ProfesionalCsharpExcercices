@@ -1,4 +1,5 @@
 using System;
+using System.Numerics;
 
 namespace Variables.Ejercicios
 {
@@ -23,7 +24,6 @@ namespace Variables.Ejercicios
     {
         public int Ejercicio(int numero){
             // Tu código debajo de esta línea
-
             numero += 10;
             numero *= 2;
             numero -= 3;
