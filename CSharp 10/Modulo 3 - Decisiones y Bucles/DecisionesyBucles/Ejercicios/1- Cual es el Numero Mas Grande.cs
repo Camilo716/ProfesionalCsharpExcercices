@@ -1,3 +1,5 @@
+using System.Dynamic;
+
 namespace DecisionesyBucles.Ejercicios
 {
     /*
@@ -13,10 +15,18 @@ namespace DecisionesyBucles.Ejercicios
     public class NumeroMayor
     {
        public int DeterminarElNumeroMayor(int a, int b){
-            int resultado = 0;
-            
-            // Tu código debajo de esta línea
-            
+
+            int resultado;
+
+            if (a > b)
+            {
+                resultado = a;
+            }
+            else
+            {
+                resultado = b;
+            }
+
             return resultado;
         }
     }
