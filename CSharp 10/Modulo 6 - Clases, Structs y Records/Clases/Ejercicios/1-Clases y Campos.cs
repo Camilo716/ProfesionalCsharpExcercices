@@ -5,7 +5,8 @@ namespace Clases.Ejercicios.Ejercicio1
 
     A) Crea una clase llamada "Persona" la cual va a tener 3 campos: 
 
-    1) _nombre (tipo de dato string), 
+    1) _nombre 
+    public string(tipo de dato string), 
 
     2) _apellido (tipo de datostring), 
 
@@ -30,12 +31,26 @@ namespace Clases.Ejercicios.Ejercicio1
 
     // Aquí puedes crear la clase (Nota: colócala como public)
 
+    public class Persona
+    {
+        public string _nombre;
+        public string _apellido;
+        public DateTime _fechaNacimiento;
 
-
+        public Persona(string _nombre, string _apellido, DateTime _fechaNacimiento)
+        {
+            this._nombre = _nombre;
+            this._apellido = _apellido;
+            this._fechaNacimiento = _fechaNacimiento;  
+        }
+    }
 
     public class Ejercicio
     {
-
+        Persona ConstruirPersona(string _nombre, string _apellido, DateTime _fechaNacimiento)
+        {
+            return new Persona(_nombre, _apellido, _fechaNacimiento);
+        }        
     }
 
 }
