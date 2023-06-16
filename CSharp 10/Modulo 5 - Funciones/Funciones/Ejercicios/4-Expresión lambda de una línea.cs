@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Metadata.Ecma335;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -14,7 +15,6 @@ namespace Funciones.Ejercicios
 
     public class ExpresiónLambdaDeUnaLínea
     {
-        // Tu código debajo de esta línea
-
+        public int Multiplicar (int num1, int num2) => num1 * num2;
     }
 }
