@@ -17,10 +17,16 @@ namespace Variables.Ejercicios
     {
         public int? DeterminarElNumeroMayor(int[] numeros)
         {
-            int? resultado = 0;
+            int? resultado;
+            resultado = numeros.Length == 0 ? null : int.MinValue;
 
-            // Tu código debajo de esta línea
-
+            for (int i = 0; i < numeros.Length; i++)
+            {
+                if (numeros[i] > resultado)
+                {
+                    resultado = numeros[i];
+                }
+            }
 
             return resultado;
         }
