@@ -7,7 +7,7 @@ namespace Clases.Soluciones.Ejercicio2
         public DateTime FechaNacimiento { get; set; }
         public string NombreCompleto => $"{Nombre} {Apellido}";
     }
-
+    
     public class Ejercicio
     {
         public Persona ConstruirPersona(string nombre, string apellido, DateTime fechaNacimiento)

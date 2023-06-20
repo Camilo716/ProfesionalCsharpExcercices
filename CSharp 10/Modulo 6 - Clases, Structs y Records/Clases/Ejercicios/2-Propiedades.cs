@@ -28,9 +28,9 @@ namespace Clases.Ejercicios.Ejercicio2
         public Persona ConstruirPersona(string nombre, string apellido, DateTime fechaNacimiento)
         {
             var persona = new Persona();
-            //persona._nombre = nombre;
-            //persona._apellido = apellido;
-            //persona._fechaNacimiento = fechaNacimiento;
+            persona.Nombre = nombre;
+            persona.Apellido = apellido;
+            persona.FechaNacimiento = fechaNacimiento;
             return persona;
         }
     }

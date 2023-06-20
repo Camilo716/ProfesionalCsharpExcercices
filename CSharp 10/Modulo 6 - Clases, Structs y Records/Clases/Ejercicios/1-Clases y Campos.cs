@@ -47,7 +47,7 @@ namespace Clases.Ejercicios.Ejercicio1
 
     public class Ejercicio
     {
-        Persona ConstruirPersona(string _nombre, string _apellido, DateTime _fechaNacimiento)
+        public Persona ConstruirPersona(string _nombre, string _apellido, DateTime _fechaNacimiento)
         {
             return new Persona(_nombre, _apellido, _fechaNacimiento);
         }        
