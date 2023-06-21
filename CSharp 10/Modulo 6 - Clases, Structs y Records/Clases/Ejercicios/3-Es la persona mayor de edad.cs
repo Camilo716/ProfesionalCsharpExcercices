@@ -14,5 +14,22 @@ namespace Clases.Ejercicios.Ejercicio3
         public string Nombre { get; set; }
         public string Apellido { get; set; }
         public DateTime FechaNacimiento { get; set; }
+
+        public bool EsMayorDeEdad()
+        {
+            DateTime currentDate = DateTime.Now;
+            int age = currentDate.Year - FechaNacimiento.Year;
+
+            bool hasBirthday = currentDate.Month >= FechaNacimiento.Month && currentDate.Day >= FechaNacimiento.Day;
+
+            if (!hasBirthday)
+            {
+                age--;
+            }
+
+            var isLegalAge = age >= 18;
+
+            return isLegalAge;
+        }
     }
 }
