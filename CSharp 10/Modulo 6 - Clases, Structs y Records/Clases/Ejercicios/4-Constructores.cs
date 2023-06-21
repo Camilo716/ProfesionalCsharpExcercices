@@ -1,3 +1,5 @@
+using System.Security.Cryptography.X509Certificates;
+
 namespace Clases.Ejercicios.Ejercicio4
 {
     /*
@@ -15,5 +17,18 @@ namespace Clases.Ejercicios.Ejercicio4
         public string Nombre { get; set; }
         public string Apellido { get; set; }
         public DateTime FechaNacimiento { get; set; }
+
+        public Persona(string nombre, string apellido)
+        {
+            Nombre = nombre;
+            Apellido = apellido;
+        }
+
+        public Persona(string nombre, string apellido, DateTime fechaNacimiento) 
+        {
+            Nombre = nombre;
+            Apellido = apellido;
+            FechaNacimiento = fechaNacimiento;
+        }
     }
 }
